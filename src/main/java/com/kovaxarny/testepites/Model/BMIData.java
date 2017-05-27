@@ -90,7 +90,7 @@ public class BMIData {
     }
 
     /**
-     * Merhod to get the BMR of the user.
+     * Method to get the BMR of the user.
      *
      * @return the Basal Metabolic Rate of the user
      */

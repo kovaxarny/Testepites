@@ -21,6 +21,7 @@ public class ExerciseItemService {
 
     /**
      * Constructor of the ExerciseItemService.
+     *
      * @param manager of the service
      */
     public ExerciseItemService(EntityManager manager) {
@@ -29,12 +30,13 @@ public class ExerciseItemService {
 
     /**
      * This method connects to the database via JPA, and queries exercises.
-     * @param muscles muscles the user wants to work on
+     *
+     * @param muscles   muscles the user wants to work on
      * @param equipment workout with or without equipment
-     * @param type is it cardio, or muscle building
+     * @param type      is it cardio, or muscle building
      * @return list of exercises that match the parameters
      */
-    public ObservableList<ExerciseItem> queryExercises(List<String> muscles, String equipment, String type) {
+    public ObservableList queryExercises(List<String> muscles, String equipment, String type) {
 
         String musclesString = "('";
         musclesString += muscles.stream()

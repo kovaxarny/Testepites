@@ -64,11 +64,11 @@ public class BMIController {
 
             Optional<ButtonType> result = alert.showAndWait();
             if (result.get() == cardio) {
-                Logger.info("Cardio was choosen");
+                Logger.info("Cardio was chosen");
                 setUpExerciseScene(true);
             } else if (result.get() == bulking) {
                 setUpExerciseScene(false);
-                Logger.info("Bulking was choosen");
+                Logger.info("Bulking was chosen");
             } else {
                 onQuitButtonClicked();
             }
