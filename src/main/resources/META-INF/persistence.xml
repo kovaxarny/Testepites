@@ -1,0 +1,19 @@
+
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+
+    <persistence-unit name="ExercisePersistenceUnit">
+        <class>com.kovaxarny.testepites.Entity.ExerciseItem</class>
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.driver.OracleDriver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@codd.inf.unideb.hu:1521:ora12c"/>
+            <property name="javax.persistence.jdbc.user" value="u_hyqhvw"/>
+            <property name="javax.persistence.jdbc.password" value="szaloncukor96"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.use_sql_comments" value="true"/>
+            <property name="hibernate.show_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>
