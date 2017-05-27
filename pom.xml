@@ -14,9 +14,9 @@
     </organization>
     <description>This is an application, which gives the user workout exercises, based on user preferences.
     </description>
-    <!--<scm>-->
-        <!--<url></url>-->
-    <!--</scm>-->
+    <scm>
+        <url>https://github.com/kovaxarny/Testepites</url>
+    </scm>
     <repositories>
         <repository>
             <id>local</id>
