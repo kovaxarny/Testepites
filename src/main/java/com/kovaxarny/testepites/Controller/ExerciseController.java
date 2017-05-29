@@ -75,6 +75,7 @@ public class ExerciseController {
         } else {
             equipmentLabel.setText(item.getEquipment());
         }
+        Logger.info("Exercises listed.");
     }
 
     @FXML
