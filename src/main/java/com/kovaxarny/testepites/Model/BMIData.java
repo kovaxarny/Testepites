@@ -2,9 +2,6 @@ package com.kovaxarny.testepites.Model;
 
 import org.pmw.tinylog.Logger;
 
-/**
- * Created by kovax on 5/2/2017.
- */
 public class BMIData {
     /**
      * Gender of the user.
@@ -24,22 +21,22 @@ public class BMIData {
     private final double weight;
     /**
      * Suggestion given to the user.
-     * Calculated from user input values.
+     * Calculated from user input values
      */
     private String suggestion;
     /**
      * Information about the user.
-     * Calculated from user input values.
+     * Calculated from user input values
      */
     private String information;
     /**
      * Body Mass Index of the user.
-     * Calculated from user input values.
+     * Calculated from user input values
      */
     private double BMI;
     /**
      * Basal Metabolic Rate of the user.
-     * Calculated from user input values.
+     * Calculated from user input values
      */
     private double BMR;
 
@@ -56,12 +53,18 @@ public class BMIData {
         this.age = age;
         this.weight = weight;
         this.height = height;
+        doCalculations();
+    }
+
+    /**
+     * Private method which calls the other methods.
+     */
+    private void doCalculations(){
         this.BMI = calculateBMI(weight,height);
         this.BMR = calculateBMR(weight,height,age);
         this.suggestion = defineSuggestion(this.BMI);
         this.information = defineInformation(this.BMI);
     }
-
     /**
      * Used to return the information about the users parameters.
      *
@@ -118,13 +121,13 @@ public class BMIData {
         Logger.info("Suggestion defined");
 
         if (BMI < 18.5) {
-            return "building muscle";
+            return "build muscle";
         } else if (BMI < 25) {
-            return  "either building muscle or cardio";
+            return  "build muscle or do some cardio";
         } else if (BMI < 30) {
-            return "either building muscle or cardio";
+            return "build muscle or do some cardio";
         } else {
-            return  "cardio";
+            return  "do cardio";
         }
     }
 

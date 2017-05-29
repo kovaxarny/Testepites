@@ -14,9 +14,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Created by kovax on 5/16/2017.
- */
 public class ChooseWindowController {
 
     @FXML

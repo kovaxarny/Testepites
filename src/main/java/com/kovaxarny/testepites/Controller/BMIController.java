@@ -54,7 +54,7 @@ public class BMIController {
             alert.setHeaderText("Your BMI is " + df.format(user.getBMI()) +
                     " and your Basal Metabolic Rate is " + df.format(user.getBMR()) + " calories/day" +
                     "\nThis means that you are " + user.getInformation() +
-                    " and I suggest you to do " + user.getSuggestion() + " exercises.");
+                    " and I suggest you to " + user.getSuggestion() + " exercises.");
             alert.setContentText("Please choose carefully: ");
 
             ButtonType cardio = new ButtonType("Cardio");

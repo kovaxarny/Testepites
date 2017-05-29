@@ -2,9 +2,6 @@ package com.kovaxarny.testepites.Entity;
 
 import javax.persistence.*;
 
-/**
- * Created by kovax on 5/13/2017.
- */
 @Entity
 @Table(name = "EXERCISES")
 public class ExerciseItem {

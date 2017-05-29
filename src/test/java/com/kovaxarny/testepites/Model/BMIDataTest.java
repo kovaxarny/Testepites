@@ -5,9 +5,6 @@ import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
 
-/**
- * Created by kovax on 5/26/2017.
- */
 public class BMIDataTest {
     private BMIData user;
 
@@ -23,7 +20,7 @@ public class BMIDataTest {
 
     @Test
     public void getSuggestion() throws Exception {
-        assertEquals("either building muscle or cardio",user.getSuggestion());
+        assertEquals("build muscle or do some cardio",user.getSuggestion());
     }
 
     @Test
