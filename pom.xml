@@ -17,12 +17,6 @@
     <scm>
         <url>https://github.com/kovaxarny/Testepites</url>
     </scm>
-    <repositories>
-        <repository>
-            <id>local</id>
-            <url>file://${project.basedir}/lib</url>
-        </repository>
-    </repositories>
     <developers>
         <developer>
             <name>Arnold Kovacs</name>
@@ -70,11 +64,12 @@
             <version>10.13.1.1</version>
             <scope>runtime</scope>
         </dependency>
-        <dependency>
-            <groupId>com.oracle.jdbc</groupId>
-            <artifactId>ojdbc7</artifactId>
-            <version>12.1.0.2</version>
-        </dependency>
+            <dependency>
+                <groupId>com.oracle.jdbc</groupId>
+                <artifactId>ojdbc7</artifactId>
+                <version>12.1.0.2</version>
+                <scope>runtime</scope>
+            </dependency>
         <dependency>
             <groupId>org.hibernate.javax.persistence</groupId>
             <artifactId>hibernate-jpa-2.1-api</artifactId>
@@ -86,6 +81,20 @@
             <version>1.2</version>
         </dependency>
     </dependencies>
+    <repositories>
+        <repository>
+            <id>maven.oracle.com</id>
+            <url>https://maven.oracle.com/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <build>
         <plugins>
             <plugin>
